@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- cache-bust: 2026-07-06T14:50Z -->
+<!-- cache-bust: 2026-07-07T12:35Z -->
 <title>23rd Annual Starved Rock Native American Artifact Show — Utica, IL · July 12, 2026</title>
 <meta name="description" content="The 23rd annual Starved Rock Native American Artifact Show — Sunday, July 12, 2026, 8 AM to 3 PM at Grand Bear Resort, Utica, IL. 117 tables of authentic pre-1900 material. Free admission. Hosted by Scott Carruthers.">
 <style>
@@ -139,12 +139,6 @@
         position: relative;
     }
     .hero-video iframe { width: 100%; height: 100%; border: 0; }
-    .hero-video-placeholder {
-        text-align: center;
-        color: var(--muted);
-        padding: 32px;
-    }
-    .hero-video-placeholder .glyph { font-size: 36px; margin-bottom: 12px; opacity: 0.6; }
 
     /* Pre-Party */
     .preparty-card {
@@ -197,51 +191,18 @@
     .preparty-card .ww { font-size: 14px; }
     .preparty-card .ww .l { display: block; font-family: 'Cormorant Garamond', serif; font-size: 10px; letter-spacing: 0.2em; color: var(--muted); text-transform: uppercase; margin-bottom: 3px; }
 
-    /* Photos */
-    .photo-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 16px;
-        max-width: 1000px;
+    /* Flyer */
+    .flyer-wrap {
+        max-width: 640px;
         margin: 0 auto;
     }
-    .photo-slot {
-        aspect-ratio: 1;
-        background:
-            repeating-linear-gradient(45deg, rgba(255,255,255,0.025) 0 12px, transparent 12px 24px),
-            #1f1a15;
-        border: 1px dashed #5a4a32;
-        border-radius: 6px;
-        overflow: hidden;
-        position: relative;
-        display: flex; align-items: center; justify-content: center;
-    }
-    .photo-slot.has-photo {
-        background: #1f1a15;
-        border-style: solid;
-        border-color: #2a2018;
-    }
-    .photo-slot img {
-        width: 100%; height: 100%;
-        object-fit: cover;
+    .flyer-wrap img {
+        width: 100%;
+        height: auto;
         display: block;
-    }
-    .photo-ph {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 11px;
-        letter-spacing: 0.2em;
-        color: var(--muted);
-        text-transform: uppercase;
-    }
-    .photo-caption {
-        position: absolute;
-        bottom: 0; left: 0; right: 0;
-        padding: 10px 12px;
-        background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.85) 100%);
-        color: var(--text);
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 13px;
-        line-height: 1.45;
+        border: 1px solid #2a2018;
+        border-radius: 6px;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.45);
     }
 
     /* Contact */
@@ -419,12 +380,13 @@
     <h2>The Show</h2>
     <p class="section-lede">Twenty-three years of bringing collectors, dealers, and the curious together in one room. Free admission. Free artifact evaluation by experts on the floor. Authentic pre-1900 Native American material only.</p>
     <div class="hero-video" id="heroVideo">
-        <!-- REPLACE the src below with the YouTube ID once Bill uploads the clip tonight -->
-        <!-- Example: https://www.youtube.com/embed/VIDEO_ID_HERE -->
-        <div class="hero-video-placeholder">
-            <div class="glyph">▶</div>
-            <div>Video intro coming soon — check back tonight.</div>
-        </div>
+        <iframe
+            src="https://www.youtube.com/embed/rNyM-7AfM70?rel=0&modestbranding=1"
+            title="Scott Carruthers introduces the 23rd Annual Starved Rock Native American Artifact Show"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
     </div>
 </section>
 
@@ -435,7 +397,7 @@
         <span class="preparty-tag">Saturday Night · July 11</span>
         <h3>Barn Burner Relics Pre-Party</h3>
         <div class="who">Hosted by Nick Gatses · Manhattan, IL</div>
-        <p>"There will be artifacts out. We have the back half of the restaurant. There will be food and drinks provided by Barn Burner Relics, aka Nick Gatses. And, it'll be a good time."</p>
+        <p>There will be artifacts out. We have the back half of the restaurant. There will be food and drinks provided by Barn Burner Relics, aka Nick Gatses. And, it'll be a good time.</p>
         <p>Bring what you've been waiting to show. Take home what you can't live without.</p>
         <div class="when-where">
             <div class="ww"><span class="l">When</span>Sat, July 11 · Evening</div>
@@ -446,30 +408,12 @@
     </div>
 </section>
 
-<section id="photos">
-    <h2>Look What You'll See</h2>
-    <p class="section-lede">A glimpse of the floor — points, pottery, bannerstones, pipes. The kind of material that draws collectors from across the Midwest to Utica every summer.</p>
-    <div class="photo-grid" id="photoGrid">
-        <div class="photo-slot">
-            <div class="photo-ph">Photo Slot 01</div>
-        </div>
-        <div class="photo-slot">
-            <div class="photo-ph">Photo Slot 02</div>
-        </div>
-        <div class="photo-slot">
-            <div class="photo-ph">Photo Slot 03</div>
-        </div>
-        <div class="photo-slot">
-            <div class="photo-ph">Photo Slot 04</div>
-        </div>
-        <div class="photo-slot">
-            <div class="photo-ph">Photo Slot 05</div>
-        </div>
-        <div class="photo-slot">
-            <div class="photo-ph">Photo Slot 06</div>
-        </div>
+<section id="flyer">
+    <h2>The Flyer</h2>
+    <p class="section-lede">Share it, print it, post it. Show &amp; pre-party details on one sheet.</p>
+    <div class="flyer-wrap">
+        <img src="flyer.jpg" alt="Starved Rock Native American Artifact Show flyer — Sunday, July 12, 2026 at Grand Bear Resort, Utica, IL. Pre-Party Saturday, July 11 at Blue Margaritas, Oglesby, IL.">
     </div>
-    <p style="text-align: center; color: var(--muted); margin-top: 24px; font-size: 13px;">Photos coming soon — fresh shots from the pre-party and the floor.</p>
 </section>
 
 <section id="contacts" style="background: var(--bg-2);">
@@ -532,10 +476,8 @@
 <section id="about-scott" style="background: var(--bg-2);">
     <h2>About Scott</h2>
     <div class="about-card">
-        <p>"I've been a part of the show since its inception. Bruce Philbrandt is the one that started the show, and myself — Scott Carruthers — Jeff Hipskind, and Todd Ferguson are carrying on Bruce's legacy by hosting the show."</p>
-        <p>"We really do bring in some of the best collections in the country. I believe this year there's 117 tables. It will be a phenomenal show. I'm not saying that because I'm one of the show hosts — I'm saying it because it is a darn good show."</p>
-        <p>"The show hours are 8:00 a.m. to 3:00 p.m. There's free admission. I would suggest coming a little bit earlier than three o'clock if you want to get to see all the collections, because some of them will pack up a little bit early and leave."</p>
-        <p>"It's right next to Starved Rock State Park — absolutely beautiful. You could make a weekend out of it."</p>
+        <p>Scott Carruthers hosts the 23rd Annual Starved Rock Native American Artifact Show alongside Jeff Hipskind and Todd Ferguson, carrying on the show founded by Bruce Filbrandt.</p>
+        <p>Held every summer at Grand Bear Resort in Utica, IL, the show brings 117 tables of authentic pre-1900 Native American material — points, pottery, bannerstones, and pipes — to collectors and dealers from across the Midwest.</p>
         <div class="signature">— Scott Carruthers, Show Host</div>
     </div>
 </section>
