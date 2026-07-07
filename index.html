@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- cache-bust: 2026-07-06T13:30Z -->
+<title>23rd Annual Starved Rock Native American Artifact Show — Utica, IL · July 12, 2026</title>
+<meta name="description" content="23rd Annual Starved Rock Native American Artifact Show, Sunday July 12, 2026, 8 AM to 3 PM, Grand Bear Resort, Utica, Illinois. Free admission. Free artifact identification. Sponsored by the Illinois State Archaeological Society. Hosted by Scott Carruthers, with Jeff Hipskind and Todd Ferguson.">
+<style>
+    :root {
+        --bg: #1a1612;
+        --bg-2: #221c16;
+        --text: #f5f0e8;
+        --muted: #8b7355;
+        --accent: #c8a878;
+        --accent-2: #d4a853;
+        --green: #4a7c4f;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; color: var(--text); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-2); }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header {
+        text-align: center;
+        padding: 56px 24px 24px;
+        background: linear-gradient(180deg, #1a1612 0%, #221c16 100%);
+        border-bottom: 1px solid #2a2018;
+    }
+    .badge-eyebrow {
+        display: inline-block;
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-size: 11px; font-weight: 600;
+        color: var(--accent);
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        padding: 6px 16px;
+        border: 1px solid var(--accent);
+        border-radius: 2px;
+        margin-bottom: 22px;
+    }
+    h1 {
+        font-size: clamp(36px, 5vw, 60px);
+        line-height: 1.05;
+        margin-bottom: 14px;
+        letter-spacing: -0.01em;
+    }
+    h1 em { font-style: italic; color: var(--accent-2); font-weight: 400; }
+    .subtitle {
+        font-size: clamp(16px, 2vw, 20px);
+        color: var(--muted);
+        max-width: 700px;
+        margin: 0 auto 28px;
+        line-height: 1.6;
+    }
+    .quick-facts {
+        display: flex; flex-wrap: wrap; justify-content: center;
+        gap: 18px 40px;
+        padding: 18px 0;
+        border-top: 1px solid #2a2018;
+        border-bottom: 1px solid #2a2018;
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .qf { font-size: 14px; }
+    .qf .q { font-family: 'Cormorant Garamond', serif; font-size: 10px; letter-spacing: 0.2em; color: var(--muted); text-transform: uppercase; display: block; margin-bottom: 3px; }
+    .qf .a { color: var(--text); font-weight: 500; }
+
+    /* Countdown */
+    .countdown-band {
+        background: linear-gradient(90deg, rgba(139,69,19,0.15) 0%, rgba(212,168,83,0.10) 50%, rgba(139,69,19,0.15) 100%);
+        padding: 30px 24px;
+        text-align: center;
+        border-bottom: 1px solid #2a2018;
+    }
+    .countdown-label {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 11px;
+        letter-spacing: 0.28em;
+        color: var(--muted);
+        text-transform: uppercase;
+        margin-bottom: 14px;
+    }
+    .countdown {
+        display: flex; justify-content: center;
+        gap: 32px;
+        font-family: 'Playfair Display', Georgia, serif;
+    }
+    .countdown-unit { text-align: center; }
+    .countdown-num {
+        font-size: 48px; font-weight: 700;
+        color: var(--accent-2);
+        line-height: 1;
+    }
+    .countdown-unit .label {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 10px; letter-spacing: 0.2em;
+        color: var(--muted);
+        text-transform: uppercase;
+        margin-top: 6px;
+        display: block;
+    }
+
+    /* Sections */
+    section { padding: 60px 24px; border-bottom: 1px solid #2a2018; }
+    section h2 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    section .section-lede {
+        text-align: center;
+        color: var(--muted);
+        max-width: 640px;
+        margin: 0 auto 40px;
+        font-size: 16px;
+    }
+
+    /* Hero video */
+    .hero-video {
+        max-width: 900px;
+        margin: 0 auto;
+        aspect-ratio: 16/9;
+        background: #0f0c09;
+        border: 1px solid #2a2018;
+        border-radius: 8px;
+        display: flex; align-items: center; justify-content: center;
+        overflow: hidden;
+        position: relative;
+    }
+    .hero-video iframe { width: 100%; height: 100%; border: 0; }
+    .hero-video-placeholder {
+        text-align: center;
+        color: var(--muted);
+        padding: 32px;
+    }
+    .hero-video-placeholder .glyph { font-size: 36px; margin-bottom: 12px; opacity: 0.6; }
+
+    /* Pre-Party */
+    .preparty-card {
+        max-width: 800px;
+        margin: 0 auto;
+        background: linear-gradient(135deg, #221c16 0%, #2a2018 100%);
+        border: 1px solid var(--accent);
+        border-radius: 8px;
+        padding: 40px;
+        position: relative;
+        overflow: hidden;
+    }
+    .preparty-card::before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0;
+        width: 200px; height: 200px;
+        background: radial-gradient(circle, rgba(212,168,83,0.15) 0%, transparent 70%);
+        pointer-events: none;
+    }
+    .preparty-tag {
+        display: inline-block;
+        background: var(--accent);
+        color: #16120e;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 11px; font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        padding: 5px 12px;
+        border-radius: 2px;
+        margin-bottom: 16px;
+    }
+    .preparty-card h3 {
+        font-size: 28px;
+        margin-bottom: 8px;
+        color: var(--accent-2);
+    }
+    .preparty-card .who {
+        font-size: 18px;
+        color: var(--text);
+        margin-bottom: 18px;
+    }
+    .preparty-card p { color: #d8c8a8; margin-bottom: 14px; }
+    .preparty-card .when-where {
+        display: flex; flex-wrap: wrap; gap: 24px;
+        padding-top: 18px;
+        border-top: 1px dashed var(--accent);
+        margin-top: 18px;
+    }
+    .preparty-card .ww { font-size: 14px; }
+    .preparty-card .ww .l { display: block; font-family: 'Cormorant Garamond', serif; font-size: 10px; letter-spacing: 0.2em; color: var(--muted); text-transform: uppercase; margin-bottom: 3px; }
+
+    /* Vendors */
+    .vendor-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 18px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .vendor-card {
+        background: rgba(255,255,255,0.02);
+        border: 1px solid #2a2018;
+        border-radius: 6px;
+        padding: 22px;
+        text-align: center;
+    }
+    .vendor-card .vnum {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 11px;
+        color: var(--muted);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+    .vendor-card h4 {
+        font-size: 17px;
+        color: var(--text);
+        margin-bottom: 6px;
+        font-family: 'Playfair Display', Georgia, serif;
+    }
+    .vendor-card .vspec {
+        font-size: 13px;
+        color: #c8b896;
+    }
+    .vendor-card.tba { border-style: dashed; opacity: 0.7; }
+    .vendor-card.tba .vname { color: var(--muted); font-style: italic; }
+
+    /* Contact */
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .contact-card {
+        background: rgba(255,255,255,0.02);
+        border: 1px solid #2a2018;
+        border-radius: 6px;
+        padding: 26px 22px;
+        text-align: center;
+    }
+    .contact-card h4 {
+        font-size: 19px;
+        color: var(--accent-2);
+        margin-bottom: 4px;
+    }
+    .contact-card .role {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 14px;
+    }
+    .contact-card a {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    .contact-card .phone { color: var(--text); }
+
+    /* Directions */
+    .map-wrap {
+        max-width: 900px;
+        margin: 0 auto 36px;
+        border: 1px solid #2a2018;
+        border-radius: 8px;
+        overflow: hidden;
+        aspect-ratio: 16/9;
+        background: #0f0c09;
+    }
+    .map-wrap iframe { width: 100%; height: 100%; border: 0; }
+    .dir-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 24px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .dir-col h4 {
+        font-size: 13px;
+        color: var(--muted);
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    .dir-col ul { list-style: none; }
+    .dir-col li {
+        font-size: 14px;
+        margin-bottom: 8px;
+        padding-left: 14px;
+        position: relative;
+    }
+    .dir-col li::before {
+        content: '·';
+        color: var(--accent);
+        font-weight: 700;
+        position: absolute;
+        left: 0;
+    }
+    .dir-col .muted { color: var(--muted); font-size: 12px; font-style: italic; }
+
+    /* About */
+    .about-card {
+        max-width: 720px;
+        margin: 0 auto;
+        background: rgba(255,255,255,0.02);
+        border-left: 3px solid var(--accent);
+        padding: 28px 32px;
+        border-radius: 4px;
+    }
+    .about-card .signature {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-style: italic;
+        color: var(--accent);
+        margin-top: 18px;
+        font-size: 15px;
+        text-align: right;
+    }
+    .about-card p { color: #d8c8a8; font-size: 16px; line-height: 1.7; }
+    .about-card .placeholder { color: var(--muted); font-style: italic; }
+
+    /* Share row */
+    .share {
+        text-align: center;
+        padding: 40px 24px;
+    }
+    .share-buttons {
+        display: inline-flex; gap: 12px; flex-wrap: wrap;
+        justify-content: center;
+    }
+    .share-btn {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 10px 18px;
+        border: 1px solid #2a2018;
+        border-radius: 4px;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        color: var(--text);
+        background: rgba(255,255,255,0.04);
+    }
+    .share-btn:hover { background: rgba(255,255,255,0.08); border-color: var(--accent); }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 36px 24px;
+        background: #0f0c09;
+        color: var(--muted);
+        font-size: 12px;
+        border-top: 1px solid #2a2018;
+    }
+    footer .links {
+        margin-bottom: 12px;
+    }
+    footer a {
+        color: var(--accent);
+        margin: 0 10px;
+    }
+
+    @media (max-width: 640px) {
+        .countdown { gap: 18px; }
+        .countdown-num { font-size: 36px; }
+        .quick-facts { gap: 16px 24px; }
+        .preparty-card { padding: 28px 22px; }
+        section { padding: 44px 16px; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="badge-eyebrow">23rd Annual · 2026</div>
+    <h1>Starved Rock <em>Native American Artifact Show</em></h1>
+    <p class="subtitle">A weekend of authentic pre-1900 Native American artifacts, free public appraisal, and the collectors and dealers who make the Midwest relic community move.</p>
+    <div class="quick-facts">
+        <div class="qf"><span class="q">Date</span><span class="a">Sunday, July 12, 2026</span></div>
+        <div class="qf"><span class="q">Hours</span><span class="a">8:00 AM – 3:00 PM</span></div>
+        <div class="qf"><span class="q">Venue</span><span class="a">Grand Bear Resort, Utica, IL</span></div>
+        <div class="qf"><span class="q">Admission</span><span class="a">Free</span></div>
+    </div>
+</header>
+
+<div class="countdown-band">
+    <div class="countdown-label">Doors open in</div>
+    <div class="countdown" id="countdown">
+        <div class="countdown-unit"><div class="countdown-num" id="cd-d">--</div><span class="label">Days</span></div>
+        <div class="countdown-unit"><div class="countdown-num" id="cd-h">--</div><span class="label">Hours</span></div>
+        <div class="countdown-unit"><div class="countdown-num" id="cd-m">--</div><span class="label">Minutes</span></div>
+        <div class="countdown-unit"><div class="countdown-num" id="cd-s">--</div><span class="label">Seconds</span></div>
+    </div>
+</div>
+
+<section id="about-the-show">
+    <h2>The Show</h2>
+    <p class="section-lede">Twenty-three years of bringing collectors, dealers, and the curious together in one room. Free admission. Free artifact evaluation by experts on the floor. Authentic pre-1900 Native American material only.</p>
+    <div class="hero-video" id="heroVideo">
+        <!-- REPLACE the src below with the YouTube ID once Bill uploads the clip tonight -->
+        <!-- Example: https://www.youtube.com/embed/VIDEO_ID_HERE -->
+        <div class="hero-video-placeholder">
+            <div class="glyph">▶</div>
+            <div>Video intro coming soon — check back tonight.</div>
+        </div>
+    </div>
+</section>
+
+<section id="pre-party" style="background: var(--bg-2);">
+    <h2>The Night Before</h2>
+    <p class="section-lede">Pre-party on Saturday, July 11. Pull up a chair, see the haul, talk shop with the dealers before doors open.</p>
+    <div class="preparty-card">
+        <span class="preparty-tag">Saturday Night · July 11</span>
+        <h3>Barn Burner Relics Pre-Party</h3>
+        <div class="who">Hosted by Nick Gatses · Manhattan, IL</div>
+        <p>The night-before meetup for the show crowd. Dealers haul inventory, collectors bring the finds they've been sitting on, and everybody gets a look at the weekend's best material before the doors open Sunday morning.</p>
+        <p>Bring what you've been waiting to show. Take home what you can't live without.</p>
+        <div class="when-where">
+            <div class="ww"><span class="l">When</span>Sat, July 11 · Evening</div>
+            <div class="ww"><span class="l">Where</span>Hosted at Grand Bear Resort · Utica, IL</div>
+            <div class="ww"><span class="l">Who's Invited</span>Show vendors + collectors</div>
+        </div>
+    </div>
+</section>
+
+<section id="vendors">
+    <h2>Vendors on the Floor</h2>
+    <p class="section-lede">Dealers specializing in authentic pre-1900 points, pottery, bannerstones, pendants, pipes, and related artifacts from across the Midwest and beyond.</p>
+    <div class="vendor-grid">
+        <div class="vendor-card tba"><div class="vnum">Vendor 01</div><div class="vname">TBA</div><div class="vspec">Vendor list finalized closer to show date — check back</div></div>
+        <div class="vendor-card tba"><div class="vnum">Vendor 02</div><div class="vname">TBA</div><div class="vspec">Vendor list finalized closer to show date — check back</div></div>
+        <div class="vendor-card tba"><div class="vnum">Vendor 03</div><div class="vname">TBA</div><div class="vspec">Vendor list finalized closer to show date — check back</div></div>
+        <div class="vendor-card tba"><div class="vnum">Vendor 04</div><div class="vname">TBA</div><div class="vspec">Vendor list finalized closer to show date — check back</div></div>
+        <div class="vendor-card tba"><div class="vnum">Vendor 05</div><div class="vname">TBA</div><div class="vspec">Vendor list finalized closer to show date — check back</div></div>
+        <div class="vendor-card tba"><div class="vnum">Vendor 06</div><div class="vname">TBA</div><div class="vspec">Vendor list finalized closer to show date — check back</div></div>
+    </div>
+    <p style="text-align: center; color: var(--muted); margin-top: 24px; font-size: 13px;">Vendor list last updated: pending. Contact Scott below to be added.</p>
+</section>
+
+<section id="contacts" style="background: var(--bg-2);">
+    <h2>Show Hosts</h2>
+    <p class="section-lede">Reach out for vendor inquiries, group rate questions, or general show information.</p>
+    <div class="contact-grid">
+        <div class="contact-card">
+            <h4>Scott Carruthers</h4>
+            <div class="role">Show Host</div>
+            <a class="phone" href="tel:+18152521322">(815) 252-1322</a>
+            <a href="mailto:crud1971@hotmail.com">crud1971@hotmail.com</a>
+        </div>
+        <div class="contact-card">
+            <h4>Jeff Hipskind</h4>
+            <div class="role">Co-Host</div>
+            <a class="phone" href="tel:+15633572918">(563) 357-2918</a>
+            <a href="mailto:hipskindj@yahoo.com">hipskindj@yahoo.com</a>
+        </div>
+        <div class="contact-card">
+            <h4>Todd Ferguson</h4>
+            <div class="role">Co-Host</div>
+            <a class="phone" href="tel:+18154881830">(815) 488-1830</a>
+        </div>
+    </div>
+</section>
+
+<section id="directions">
+    <h2>Getting There</h2>
+    <p class="section-lede">Grand Bear Resort sits along the Illinois River at Starved Rock — easy to reach from Chicago, Peoria, or the Quad Cities.</p>
+    <div class="map-wrap">
+        <iframe
+            src="https://www.google.com/maps?q=Grand+Bear+Resort,+2643+N+IL-178,+Utica,+IL+61373&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Grand Bear Resort, Utica, IL"></iframe>
+    </div>
+    <div class="dir-grid">
+        <div class="dir-col">
+            <h4>Address</h4>
+            <ul>
+                <li>Grand Bear Resort</li>
+                <li>2643 N. IL Route 178</li>
+                <li>Utica, IL 61373</li>
+                <li class="muted">Venue phone: (866) 399-3866</li>
+            </ul>
+        </div>
+        <div class="dir-col">
+            <h4>Distance From</h4>
+            <ul>
+                <li>Chicago ~ 1h 45m (95 mi)</li>
+                <li>Peoria ~ 1h (55 mi)</li>
+                <li>Quad Cities ~ 1h 30m (90 mi)</li>
+                <li>Springfield ~ 2h (115 mi)</li>
+            </ul>
+        </div>
+        <div class="dir-col">
+            <h4>Nearby Hotels</h4>
+            <ul>
+                <li>Best Western — Oglesby, IL · (815) 883-3535</li>
+                <li>Days Inn — Oglesby, IL · (815) 883-9600</li>
+                <li>Holiday Inn Express — Peru, IL · (815) 224-2500</li>
+                <li>Super 8 — Peru, IL · (815) 223-1848</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="about-scott" style="background: var(--bg-2);">
+    <h2>About Scott</h2>
+    <div class="about-card">
+        <p class="placeholder">[Scott's intro — pulled verbatim from the show-night video. Will swap in here tonight once the clip is uploaded and edited.]</p>
+        <div class="signature">— Scott Carruthers, Show Host</div>
+    </div>
+</section>
+
+<div class="share">
+    <div class="countdown-label" style="margin-bottom: 18px;">Tell a collector</div>
+    <div class="share-buttons">
+        <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbillthorpe522.github.io%2Fstarved-rock-2026%2F" target="_blank" rel="noopener">Facebook</a>
+        <a class="share-btn" href="https://www.facebook.com/groups/starvedrockrelics" target="_blank" rel="noopener">Starved Rock Relics Group</a>
+        <a class="share-btn" href="javascript:void(0)" onclick="navigator.clipboard.writeText('https://billthorpe522.github.io/starved-rock-2026/'); alert('Link copied');">Copy Link</a>
+    </div>
+</div>
+
+<footer>
+    <div class="links">
+        <a href="https://www.facebook.com/groups/starvedrockrelics" target="_blank" rel="noopener">Starved Rock Relics (Facebook)</a>
+        <a href="#about-the-show">About</a>
+        <a href="#directions">Directions</a>
+        <a href="#contacts">Contact</a>
+    </div>
+    <div>23rd Annual Starved Rock Native American Artifact Show · Sunday, July 12, 2026 · Sponsored by the Illinois State Archaeological Society</div>
+    <div style="margin-top: 8px;">Site built for Scott Carruthers · 2026</div>
+</footer>
+
+<script>
+    // Countdown to Sun Jul 12 2026 08:00:00 in the venue's local time zone (America/Chicago, UTC-5 in July = CDT)
+    const SHOW_TIME = new Date('2026-07-12T08:00:00-05:00');
+    const cdD = document.getElementById('cd-d');
+    const cdH = document.getElementById('cd-h');
+    const cdM = document.getElementById('cd-m');
+    const cdS = document.getElementById('cd-s');
+    function tick() {
+        const now = new Date();
+        let diff = Math.max(0, SHOW_TIME - now);
+        const d = Math.floor(diff / 86400000); diff -= d * 86400000;
+        const h = Math.floor(diff / 3600000);  diff -= h * 3600000;
+        const m = Math.floor(diff / 60000);    diff -= m * 60000;
+        const s = Math.floor(diff / 1000);
+        cdD.textContent = String(d).padStart(2, '0');
+        cdH.textContent = String(h).padStart(2, '0');
+        cdM.textContent = String(m).padStart(2, '0');
+        cdS.textContent = String(s).padStart(2, '0');
+        if (SHOW_TIME - now <= 0) {
+            document.getElementById('countdown').innerHTML =
+                '<div style="font-family: Playfair Display, Georgia, serif; font-size: 28px; color: var(--accent-2);">Doors are open. See you in Utica.</div>';
+        }
+    }
+    tick();
+    setInterval(tick, 1000);
+</script>
+</body>
+</html>
