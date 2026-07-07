@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- cache-bust: 2026-07-06T14:25Z -->
+<!-- cache-bust: 2026-07-06T14:50Z -->
 <title>23rd Annual Starved Rock Native American Artifact Show — Utica, IL · July 12, 2026</title>
 <meta name="description" content="23rd Annual Starved Rock Native American Artifact Show, Sunday July 12, 2026, 8 AM to 3 PM, Grand Bear Resort, Utica, Illinois. Free admission. Free artifact identification. Sponsored by the Illinois State Archaeological Society. Hosted by Scott Carruthers.">
 <style>
@@ -197,41 +197,52 @@
     .preparty-card .ww { font-size: 14px; }
     .preparty-card .ww .l { display: block; font-family: 'Cormorant Garamond', serif; font-size: 10px; letter-spacing: 0.2em; color: var(--muted); text-transform: uppercase; margin-bottom: 3px; }
 
-    /* Vendors */
-    .vendor-grid {
+    /* Photos */
+    .photo-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-        gap: 18px;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 16px;
         max-width: 1000px;
         margin: 0 auto;
     }
-    .vendor-card {
-        background: rgba(255,255,255,0.02);
-        border: 1px solid #2a2018;
+    .photo-slot {
+        aspect-ratio: 1;
+        background:
+            repeating-linear-gradient(45deg, rgba(255,255,255,0.025) 0 12px, transparent 12px 24px),
+            #1f1a15;
+        border: 1px dashed #5a4a32;
         border-radius: 6px;
-        padding: 22px;
-        text-align: center;
+        overflow: hidden;
+        position: relative;
+        display: flex; align-items: center; justify-content: center;
     }
-    .vendor-card .vnum {
+    .photo-slot.has-photo {
+        background: #1f1a15;
+        border-style: solid;
+        border-color: #2a2018;
+    }
+    .photo-slot img {
+        width: 100%; height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .photo-ph {
         font-family: 'Cormorant Garamond', serif;
         font-size: 11px;
-        color: var(--muted);
         letter-spacing: 0.2em;
+        color: var(--muted);
         text-transform: uppercase;
-        margin-bottom: 6px;
     }
-    .vendor-card h4 {
-        font-size: 17px;
+    .photo-caption {
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        padding: 10px 12px;
+        background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.85) 100%);
         color: var(--text);
-        margin-bottom: 6px;
-        font-family: 'Playfair Display', Georgia, serif;
-    }
-    .vendor-card .vspec {
+        font-family: 'Cormorant Garamond', serif;
         font-size: 13px;
-        color: #c8b896;
+        line-height: 1.45;
     }
-    .vendor-card.tba { border-style: dashed; opacity: 0.7; }
-    .vendor-card.tba .vname { color: var(--muted); font-style: italic; }
 
     /* Contact */
     .contact-grid {
@@ -434,18 +445,30 @@
     </div>
 </section>
 
-<section id="vendors">
-    <h2>Vendors on the Floor</h2>
-    <p class="section-lede">Dealers specializing in authentic pre-1900 points, pottery, bannerstones, pendants, pipes, and related artifacts from across the Midwest and beyond.</p>
-    <div class="vendor-grid">
-        <div class="vendor-card tba"><div class="vnum">Vendor 01</div><div class="vname">TBA</div><div class="vspec">Vendor list finalized closer to show date — check back</div></div>
-        <div class="vendor-card tba"><div class="vnum">Vendor 02</div><div class="vname">TBA</div><div class="vspec">Vendor list finalized closer to show date — check back</div></div>
-        <div class="vendor-card tba"><div class="vnum">Vendor 03</div><div class="vname">TBA</div><div class="vspec">Vendor list finalized closer to show date — check back</div></div>
-        <div class="vendor-card tba"><div class="vnum">Vendor 04</div><div class="vname">TBA</div><div class="vspec">Vendor list finalized closer to show date — check back</div></div>
-        <div class="vendor-card tba"><div class="vnum">Vendor 05</div><div class="vname">TBA</div><div class="vspec">Vendor list finalized closer to show date — check back</div></div>
-        <div class="vendor-card tba"><div class="vnum">Vendor 06</div><div class="vname">TBA</div><div class="vspec">Vendor list finalized closer to show date — check back</div></div>
+<section id="photos">
+    <h2>Look What You'll See</h2>
+    <p class="section-lede">A glimpse of the floor — points, pottery, bannerstones, pipes. The kind of material that draws collectors from across the Midwest to Utica every summer.</p>
+    <div class="photo-grid" id="photoGrid">
+        <div class="photo-slot">
+            <div class="photo-ph">Photo Slot 01</div>
+        </div>
+        <div class="photo-slot">
+            <div class="photo-ph">Photo Slot 02</div>
+        </div>
+        <div class="photo-slot">
+            <div class="photo-ph">Photo Slot 03</div>
+        </div>
+        <div class="photo-slot">
+            <div class="photo-ph">Photo Slot 04</div>
+        </div>
+        <div class="photo-slot">
+            <div class="photo-ph">Photo Slot 05</div>
+        </div>
+        <div class="photo-slot">
+            <div class="photo-ph">Photo Slot 06</div>
+        </div>
     </div>
-    <p style="text-align: center; color: var(--muted); margin-top: 24px; font-size: 13px;">Vendor list last updated: pending. Contact Scott below to be added.</p>
+    <p style="text-align: center; color: var(--muted); margin-top: 24px; font-size: 13px;">Photos coming soon — fresh shots from the pre-party and the floor.</p>
 </section>
 
 <section id="contacts" style="background: var(--bg-2);">
@@ -455,7 +478,7 @@
         <div class="contact-card">
             <h4>Scott Carruthers</h4>
             <div class="role">Show Host</div>
-            <a class="phone" href="tel:+181****1322">(815) 252-1322</a>
+            <a class="phone" href="tel:+18152521322">(815) 252-1322</a>
             <a href="mailto:crud1971@hotmail.com">crud1971@hotmail.com</a>
         </div>
     </div>
